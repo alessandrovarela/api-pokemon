@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "d6d76e36-a777-497e-adf9-25f9ef523bfa",
+		"name": "API Pokemon Prod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pokemon",
+			"item": [
+				{
+					"name": "Get Pokemons",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "vnd.api+json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://stark-falls-15051.herokuapp.com/pokemons",
+							"protocol": "https",
+							"host": [
+								"stark-falls-15051",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"pokemons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Pokemon",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n    \"data\": {\n        \"type\": \"pokemons\",\n        \"attributes\": {\n            \"name\": \"NewPokemon\",\n            \"type1\": \"Post\",\n            \"type2\": \"Poison\",\n            \"total\": 999,\n            \"hp\": 45,\n            \"attack\": 49,\n            \"defense\": 49,\n            \"sp-atk\": 65,\n            \"sp-def\": 65,\n            \"speed\": 45,\n            \"generation\": 1,\n            \"legendary\": true\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stark-falls-15051.herokuapp.com/pokemons",
+							"protocol": "https",
+							"host": [
+								"stark-falls-15051",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"pokemons"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Pokemon",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://stark-falls-15051.herokuapp.com/pokemons/21",
+							"protocol": "https",
+							"host": [
+								"stark-falls-15051",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"pokemons",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Pokemon",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\":\n        {\n        \"id\": \"800\",\n        \"type\": \"pokemons\",\n        \"attributes\": {\n            \"name\": \"PokemonPatch800\",\n            \"type1\": \"Patch\",\n            \"type2\": \"Patch2\",\n            \"total\": 111\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stark-falls-15051.herokuapp.com/pokemons/800",
+							"protocol": "https",
+							"host": [
+								"stark-falls-15051",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"pokemons",
+								"800"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pokemon Pagination",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://stark-falls-15051.herokuapp.com/pokemons?page[number]=2&page[size]=25",
+							"protocol": "https",
+							"host": [
+								"stark-falls-15051",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"pokemons"
+							],
+							"query": [
+								{
+									"key": "page[number]",
+									"value": "2"
+								},
+								{
+									"key": "page[size]",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
