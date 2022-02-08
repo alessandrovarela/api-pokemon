@@ -33,6 +33,6 @@ The API is temporarily available online at [https://stark-falls-15051.herokuapp.
 ### *Postman Request Examples* 
 Just import to Postman the file inside */vendor* folder. 
 
-For tests in production (online): *API Pokemon Prod.postman_collection.json* 
+For tests in production (online): [API Pokemon Prod.postman_collection.json](https://github.com/alessandrovarela/api-pokemon/blob/master/vendor/API%20Pokemon%20Prod.postman_collection.json)
 
-For testing in dev (local): *API Pokemon Dev.postman_collection.json*
+For testing in dev (local): [API Pokemon Dev.postman_collection.json](https://github.com/alessandrovarela/api-pokemon/blob/master/vendor/API%20Pokemon%20Dev.postman_collection.json)
