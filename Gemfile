@@ -21,7 +21,6 @@ gem 'puma', '~> 3.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
- gem 'sqlite3'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 gem 'tty-spinner'
@@ -35,7 +34,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.5'
   gem 'rspec-json_expectations'
-  
+  gem 'sqlite3'
 end
 
 group :development do
@@ -46,7 +45,7 @@ group :development do
 end
 
 group :production do
-  #gem 'pg'
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
