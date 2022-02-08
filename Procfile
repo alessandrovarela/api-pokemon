@@ -1,2 +1,2 @@
-worker: bundle exec rake dev:setup
-web: bundle exec rails server -p $PORT
+worker: rails dev:setup
+web: bundle exec rails server -p 3000
