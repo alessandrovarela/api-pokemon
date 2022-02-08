@@ -31,6 +31,8 @@ rspec
 The API is temporarily available online at [https://stark-falls-15051.herokuapp.com/pokemons](https://stark-falls-15051.herokuapp.com/pokemons)
 
 ### *Postman Request Examples* 
-Just import to Postman the file inside *Vendor* folder
-For testing production (online): API Pokemon Prod.postman_collection.json
-For testing dev (local): API Pokemon Dev.postman_collection.json
+Just import to Postman the file inside */vendor* folder. 
+
+For tests in production (online): *API Pokemon Prod.postman_collection.json* 
+
+For testing in dev (local): *API Pokemon Dev.postman_collection.json*
