@@ -11,13 +11,7 @@ require 'rails_helper'
 
 describe PokemonsController, type: :controller do
 
-  #it 'request index and return 406 NOT ACCEPTABLE' do
-    #get :index
-    #expect(response).to have_http_status(:not_acceptable)
-  #end
-
   it "PokemonsController: GET index - return #{:ok}" do
-  #  request.accept = 'application/vnd.api+json'
     get :index
     expect(response).to have_http_status(:ok)
   end
@@ -31,7 +25,6 @@ describe PokemonsController, type: :controller do
     expect(response_body.fetch('data').fetch('type')).to eq('pokemons')
     expect(response_body.fetch('data').fetch('attributes').fetch('name')).to eq(pokemon.name)
  
-    #expect(response_body.json('data > attributes > name')).to eq(contact.name)
   end
 
 end
