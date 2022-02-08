@@ -48,6 +48,7 @@ class PokemonsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def pokemon_params
-      params.require(:pokemon).permit(:name, :type1, :type2, :total, :hp, :attack, :defense, :sp_atk, :sp_def, :speed, :generation, :legendary)
+      #params.require(:pokemon).permit(:name, :type1, :type2, :total, :hp, :attack, :defense, :sp_atk, :sp_def, :speed, :generation, :legendary)
+      ActiveModelSerializers::Deserialization.jsonapi_parse(params)
     end
 end
