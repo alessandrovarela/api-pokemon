@@ -26,6 +26,11 @@ To test all API calls using RSpec, just run inside the project folder:
 rspec
 ```
 
+
+### API Pokemon On-line
+The API is temporarily available online at [https://stark-falls-15051.herokuapp.com/pokemons](https://stark-falls-15051.herokuapp.com/pokemons)
+
 ### *Postman Request Examples* 
-Just import the file inside the Vendor folder to Postman
-file: API Pokemon.postman_collection.json
+Just import to Postman the file inside *Vendor* folder
+For testing production (online): API Pokemon Prod.postman_collection.json
+For testing dev (local): API Pokemon Dev.postman_collection.json
